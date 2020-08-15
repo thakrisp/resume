@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 3, 2017, 6:35:46 PM
+    Author     : ryanc
+*/
+
+#LogoIcon
+{
+    margin: 0;
+    padding-top: 1%;
+}
+
+/* @media screen and (min-width:767px) {
+#LogoIcon
+{
+    margin: 0;
+    padding-top: 15%;
+}
+}
+ */
+
+.navbar {
+  margin-bottom: 0;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+  color: white !important;
+  text-align: center;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  color: darkblue !important;
+}
+
+/* .navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: rgb(153, 6, 6) !important;
+} */
