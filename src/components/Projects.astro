@@ -1,0 +1,96 @@
+---
+let projects = [
+  {
+    name: "Internal work projcet",
+    url: "#",
+    img: "/Resume/projects.jpg",
+    tech: ["Vue3", "Firebase"],
+    description:
+      "This projcet was to build a internal tools that takes in Excel data turns it into JSON via cloud functions. This data is then displayed it in a table similiar to other internal tools. This tool reduced production time by at ~1 week.",
+  },
+  {
+    name: "Ammo Cache",
+    url: "https://github.com/thakrisp/AmmoInentory",
+    img: "/Resume/AmmoCache.png",
+    tech: ["SvelteKit", "firebase", "Tailwind"],
+    description:
+      "An app that displays all the types of ammo you have with details. easy to read when you are getting low on a specific ammo. Built with a mobile first design",
+    working: true,
+  },
+  {
+    name: "Exhaust Sounds",
+    url: "https://calm-inlet-14554.herokuapp.com/",
+    img: "/Resume/ExhaustSounds.png",
+    tech: ["Vue", "S3", "Tailwind", "MongoDB", "Wave.js"],
+    description:
+      "A place where automotive enthusiast can find and upload their favorite automotive exhaust sounds.",
+  },
+  {
+    name: "Sports Areana Mapper",
+    url: "https://intense-hamlet-60001.herokuapp.com/",
+    img: "/Resume/ArenaMapper.png",
+    tech: ["Mapbox", "GCP Geocoding", "Python", "lodash"],
+    description:
+      "Ever wonder what cities have sports teams and which dont, what state has the most teams? With a python CRON job this app creates a JSON file once a year and the mapbox frontend plots the geoprahic location.",
+  },
+  {
+    name: "Entertainment ToDo",
+    img: "/Resume/ToDo.png",
+    url: "https://peaceful-beach-23040.herokuapp.com/",
+    tech: ["Vue3", "MongoDB", "Tailwind"],
+    description:
+      "Is your backlog of entertainment to consume getting to long? Know when you started that movie/series/book/games and when you finsihed. Know how well you are doing this year by comparing how many things you've started vs finish.",
+  },
+];
+---
+
+<div class="flex flex-col">
+  <h1 class="flex justify-center text-4xl font-semibold underline">Projects</h1>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-2 self-center gap-4 mt-2"
+  >
+    {
+      projects.map((data) => (
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <a href={data.url} class="flex flex-col h-full object-scale-down ">
+            <div class="relative justify-center items-center">
+              <img
+                class={data?.working ? "grayscale" : ""}
+                class="w-full "
+                src="/Resume/projects.jpg"
+                alt="project image"
+              />
+              {data?.working && (
+                <div class="working absolute z-10 inset-0 flex items-center justify-center text-yellow-600 font-semibold text-6xl 2xl:text-8xl">
+                  working
+                </div>
+              )}
+            </div>
+            <div class="flex flex-col h-full justify-between">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">{data.name}</div>
+                <p class="text-gray-700 text-base indent-5">
+                  {data.description}
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                {data.tech.map((tech) => (
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .working {
+    transform: rotate(-24deg);
+    top: -0.25em;
+  }
+</style>

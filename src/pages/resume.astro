@@ -1,0 +1,337 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="px-0 md:px-10">
+    <div id="app">
+      <div class="header">
+        <div class="jobTitle">
+          <div class="name">Ryan Crispin</div>
+          <div class="midline">Targeting a position as a</div>
+          <div class="job">Full stack developer</div>
+        </div>
+        <div class="divider">&nbsp;</div>
+      </div>
+
+      <div class="body">
+        <div class="sidebar">
+          <div class="contact contactContainer">
+            <div class="title">
+              <div class="title1">Contact</div>
+              <div class="divider">&nbsp;</div>
+            </div>
+            <div class="content">
+              <div class="block">
+                <div class="title2">Phone</div>
+                <div class="content">(248) 506 0894</div>
+              </div>
+              <div class="block">
+                <div class="title2">Email</div>
+                <div class="content">RyanCrispin@gmail.com</div>
+              </div>
+              <div class="block">
+                <div class="title2">LinkedIn</div>
+                <div class="content">
+                  <a href="https://linkedin.com/in/ryancrispin/"
+                    >linkedin.com/in/ryancrispin/</a
+                  >
+                </div>
+              </div>
+              <div class="block">
+                <div class="title2">Github</div>
+                <div class="content">
+                  <a href="https://github.com/thakrisp"
+                    >https://github.com/thakrisp</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="School contactContainer">
+            <div class="title">
+              <div class="title1">Education</div>
+              <div class="divider">&nbsp;</div>
+            </div>
+            <div class="content">
+              <div class="title2">B.S. Computer Science</div>
+              <div class="content">Baker College</div>
+              <div class="content">2010-2015</div>
+            </div>
+          </div>
+
+          <div class="skills">
+            <div class="title">
+              <div class="title1">Skills</div>
+              <div class="divider">&nbsp;</div>
+            </div>
+            <div class="content">
+              <div class="block">
+                <div class="title2">Languages</div>
+                <div>Javascript, TypeScript, NodeJS, Java, Go, Python</div>
+              </div>
+              <div class="block">
+                <div class="title2">Frameworks</div>
+                <div>Vue, React, Svelte</div>
+              </div>
+              <div class="block">
+                <div class="title2">Cloud</div>
+
+                <div>Firebase, AWS</div>
+              </div>
+              <div class="block">
+                <div class="title2">Design</div>
+                <div>Figma, Illustrator</div>
+              </div>
+              <div class="block">
+                <div class="title2">Database</div>
+                <div>MongoDB, MySQL</div>
+              </div>
+              <div>
+                <div class="block">
+                  <div class="title2">Other</div>
+                  <div>Apache Servers, Windows, Linux</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="experienceContainer">
+            <div class="title">
+              <div class="title1">Experience</div>
+              <div class="divider">&nbsp;</div>
+            </div>
+            <div class="jobContainer first">
+              <div class="title1">Prototype Developer</div>
+              <div class="title2">Brightstar Engineering</div>
+              <div class="midline">03-2022 - Current / Troy, MI</div>
+              <div class="list">
+                <ul>
+                  <li>Work with managers to identify teams problem areas.</li>
+                  <li>
+                    Created plugin for Adobe AI that reduces time and improves
+                    accuracy for creating documents.
+                  </li>
+                  <li>
+                    Designed a internal tool that takes in a csv and displays it
+                    similar to other internal tools using cloud functions.
+                  </li>
+                  <li>
+                    Managed a project between two groups to expedite process and
+                    improve quality.
+                  </li>
+                  <li>
+                    Designed a charting system that creates a easily readable
+                    status report.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="jobContainer">
+              <div class="title1">IT Support Specialist</div>
+              <div class="title2">Brightstar Engineering</div>
+              <div class="midline">08-2018 - Current / Troy, MI</div>
+              <div class="list">
+                <ul>
+                  <li>
+                    Devise, test and evaluate new systems to improve quality.
+                  </li>
+                  <li>Maintain hardware and software.</li>
+                  <li>Inventory management of IT hardware and licenses.</li>
+                  <li>Maintaining documentation to support new procedures.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="jobContainer">
+              <div class="title1">System Wiring Illustrator</div>
+              <div class="title2">Brightstar Engineering</div>
+              <div class="midline">09-2012 - Current / Troy, MI</div>
+              <div class="class">
+                <ul>
+                  <li>
+                    Create wiring diagrams using Adobe Illustrator for FCA
+                    technicians.
+                  </li>
+                  <li>
+                    Trained new hires on corporate standards and policies.
+                  </li>
+                  <li>
+                    Attain rigorous deadlines on short notice and multitask on
+                    multiple projects simultaneously.
+                  </li>
+                  <li>
+                    Understanding and completing out Powerflow and communication
+                    circuits.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="projectsContainer">
+            <div class="title">
+              <div class="title1">Projects</div>
+              <div class="divider">&nbsp;</div>
+            </div>
+            <div class="projectBody first">
+              <div class="title2">Sports arena mapper</div>
+              <ul>
+                <li>
+                  Displays the four major US sports arenas names and information
+                  about them on a map.
+                </li>
+                <li>
+                  Using Python, nodeJS, Express, mapbox and google geocoding.
+                </li>
+              </ul>
+            </div>
+            <div class="projectBody">
+              <div class="title2">Car exhaust sounds</div>
+              <ul>
+                <li>
+                  Allows users to upload sounds of car exhausts. Users can add
+                  tags to uploads as well as download the sounds. System hides
+                  sounds if reported to many times.
+                </li>
+                <li>Using Vue, Nodejs, Express, MongoDB and AWS S3.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        background-color: #01618a;
+        color: white;
+        padding: 0.5em 1em;
+        z-index: 99;
+      }
+
+      .name {
+        font-size: 3em;
+      }
+
+      .job {
+        font-size: 2em;
+      }
+
+      .midline {
+        font-style: italic;
+      }
+
+      .jobTitle {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        align-items: center;
+      }
+
+      .divider {
+        height: 2px;
+        background-color: #000000;
+        opacity: 0.4;
+      }
+
+      .body {
+        display: flex;
+      }
+
+      .sidebar {
+        background-color: #e9e9e9;
+        padding: 0 0.5em;
+        display: flex;
+        flex-direction: column;
+        max-width: 12em;
+      }
+
+      .sidebar .title {
+        padding-bottom: 0.25em;
+      }
+
+      .main {
+        padding-left: 1em;
+        padding-right: 0.5em;
+        width: 100%;
+      }
+
+      .title1 {
+        font-size: 2em;
+        color: #01618a;
+        font-weight: bold;
+      }
+
+      .title2 {
+        font-weight: bold;
+      }
+
+      .jobContainer .title1 {
+        font-size: 1.25em;
+        color: #01618a;
+      }
+
+      .blockBody {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .year {
+        margin-right: 1em;
+      }
+
+      .jobContainer {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main ul {
+        padding-left: 1.75em;
+      }
+
+      .first {
+        padding-top: 0.25em;
+      }
+
+      .list li {
+        word-wrap: normal;
+      }
+
+      .contactContainer {
+        padding-bottom: 0.5em;
+      }
+
+      .sidebar .title2 {
+        color: #01618a;
+      }
+
+      ul {
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+      }
+
+      .projectsContainer .title {
+        padding-bottom: 0.5em;
+      }
+
+      .block {
+        padding-bottom: 0.5em;
+      }
+
+      .jobContainer .title2 {
+        padding: 0.15em 0;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+---
+import { SITE_TITLE } from "../config";
+---
+
+<nav class="sticky top-0 z-20">
+  <div
+    class="flex flex-row justify-between bg-gray-500 px-2 pb-1 md:rounded-b-md"
+  >
+    <a href="#" class="flex flex-row">
+      <img
+        src="/Resume/RC_Icon.png"
+        class="md:hidden"
+        alt="Ryan Crispin Logo"
+      />
+      <span class="self-center invisible md:visible font-semibold text-white"
+        >RyanCrispin.me</span
+      >
+    </a>
+    <div class="self-center">
+      <ul class="flex flex-row items-end space-x-2">
+        <li class="underline underline-offset-2">
+          <a href="#" class="" aria-current="page">Home</a>
+        </li>
+        <li class="underline underline-offset-2">
+          <a
+            href="https://www.linkedin.com/in/ryancrispin/"
+            class="flex"
+            aria-current="page"
+          >
+            <img
+              class="pr-0.5"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTQxLDRIOUM2LjI0LDQsNCw2LjI0LDQsOXYzMmMwLDIuNzYsMi4yNCw1LDUsNWgzMmMyLjc2LDAsNS0yLjI0LDUtNVY5QzQ2LDYuMjQsNDMuNzYsNCw0MSw0eiBNMTcsMjB2MTloLTZWMjBIMTd6IE0xMSwxNC40N2MwLTEuNCwxLjItMi40NywzLTIuNDdzMi45MywxLjA3LDMsMi40N2MwLDEuNC0xLjEyLDIuNTMtMywyLjUzQzEyLjIsMTcsMTEsMTUuODcsMTEsMTQuNDd6IE0zOSwzOWgtNmMwLDAsMC05LjI2LDAtMTAgYzAtMi0xLTQtMy41LTQuMDRoLTAuMDhDMjcsMjQuOTYsMjYsMjcuMDIsMjYsMjljMCwwLjkxLDAsMTAsMCwxMGgtNlYyMGg2djIuNTZjMCwwLDEuOTMtMi41Niw1LjgxLTIuNTYgYzMuOTcsMCw3LjE5LDIuNzMsNy4xOSw4LjI2VjM5eiI+PC9wYXRoPjwvc3ZnPg=="
+            />
+            LinkedIn</a
+          >
+        </li>
+        <li class="underline underline-offset-2">
+          <a
+            href="https://github.com/thakrisp"
+            class="flex flex-row"
+            aria-current="page"
+          >
+            <img
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBkPSJNMjUsOGM5LjM4OSwwLDE3LDcuNjExLDE3LDE3YzAsNy41NDgtNC45MjEsMTMuOTQ0LTExLjcyOSwxNi4xNjNjMC4wMDItMC4wMDYsMC4wMDUtMC4wMTYsMC4wMDUtMC4wMTYJcy0xLjE0Ny0wLjUzOC0xLjEyMy0xLjQ5OGMwLjAyNy0xLjA1NiwwLTMuNTIxLDAtNC40MjZjMC0xLjU1My0wLjk4My0yLjY1NC0wLjk4My0yLjY1NHM3LjcwOSwwLjA4Nyw3LjcwOS04LjEzOQljMC0zLjE3NC0xLjY1OS00LjgyNS0xLjY1OS00LjgyNXMwLjg3MS0zLjM4OC0wLjMwMi00LjgyNWMtMS4zMTUtMC4xNDItMy42NjksMS4yNTctNC42NzUsMS45MWMwLDAtMS41OTMtMC42NTMtNC4yNDQtMC42NTMJYy0yLjY1LDAtNC4yNDQsMC42NTMtNC4yNDQsMC42NTNjLTEuMDA1LTAuNjUzLTMuMzYtMi4wNTItNC42NzUtMS45MWMtMS4xNzMsMS40MzctMC4zMDIsNC44MjUtMC4zMDIsNC44MjUJcy0xLjY1OSwxLjY1Mi0xLjY1OSw0LjgyNWMwLDguMjI2LDcuNzA5LDguMTM5LDcuNzA5LDguMTM5cy0wLjc3NywwLjg3OC0wLjk0NiwyLjE2OGMtMC41MzgsMC4xODMtMS4zMywwLjQwOC0xLjk2OSwwLjQwOAljLTEuNjczLDAtMi45NDYtMS42MjYtMy40MTItMi4zNzljLTAuNDYtMC43NDItMS40MDMtMS4zNjUtMi4yODEtMS4zNjVjLTAuNTc5LDAtMC44NjEsMC4yODktMC44NjEsMC42MgljMCwwLjMzMSwwLjgxMSwwLjU2MiwxLjM0NywxLjE3NWMxLjEyOSwxLjI5NCwxLjEwOSw0LjIwMiw1LjEzMiw0LjIwMmMwLjQzNywwLDEuMzI5LTAuMTA3LDItMC4xOTgJYy0wLjAwNCwwLjkxNi0wLjAwNSwxLjg4MiwwLjAwOSwyLjQ0N2MwLjAyNCwwLjk2LTEuMTIzLDEuNDk4LTEuMTIzLDEuNDk4czAuMDAzLDAuMDEsMC4wMDUsMC4wMTZDMTIuOTIxLDM4Ljk0NCw4LDMyLjU0OCw4LDI1CUM4LDE1LjYxMSwxNS42MTEsOCwyNSw4eiI+PC9wYXRoPjwvc3ZnPg=="
+            />GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style></style>

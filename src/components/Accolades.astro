@@ -1,0 +1,23 @@
+---
+let accolades = [
+  { title: "Emplyee of the month", time: "September 2017" },
+  { title: "Deans list", time: "2014, 2015" },
+  { title: "Presidents list", time: "2014" },
+];
+---
+
+<div class="flex flex-col justify-center mt-2">
+  <h1 class="text-4xl underline text-center font-semibold">Accolades</h1>
+  <div class="text-center px-5 mt-2 flex justify-center">
+    <div class="bg-gray-200 w-fit px-5 py-2 rounded-md">
+      {
+        accolades.map((item) => (
+          <div class=" ">
+            <span class="font-semibold">{item.title}:</span>
+            {item.time}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>

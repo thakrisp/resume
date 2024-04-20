@@ -1,0 +1,101 @@
+---
+let skills = {
+  languages: [
+    "Jasvascript",
+    "HTML",
+    "CSS",
+    "React",
+    "Vue3",
+    "Android",
+    "Java",
+    "JQuery/AJAX",
+  ],
+  database: ["MongoDB", "MySQL", "Oracle 11", "SQL Server", "Firebase"],
+  backend: ["Node.js", "Apache", "Fiber", "express", "Springboot"],
+  tools: ["VSCode", "IntelJ", "Android Studio", "Office"],
+  os: ["Windows 7/10/11", "Linux (Ubuntu)"],
+  other: ["Adobe CC", "Photoshop"],
+};
+---
+
+<div class="flex flex-col justify-center mt-2">
+  <h1 class="text-4xl underline text-center font-semibold">Skills</h1>
+  <div class="bg-gray-100 rounded-md w-fit flex flex-col self-center px-2 mt-2">
+    <div class="flex flex-col">
+      <div class="text-center font-semibold">Languages/libraries:</div>
+      <div class="flex flex-row flex-wrap justify-center gap-x-4">
+        {
+          skills.languages.map((item) => (
+            <div class=" bg-gray-200 my-2 w-fit p-2 rounded-md text-center">
+              {item}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <div class="text-center font-semibold">Databases:</div>
+      <div class="flex flex-row flex-wrap justify-center gap-x-4">
+        {
+          skills.database.map((item) => (
+            <div class=" bg-gray-200 my-2 w-fit p-2 rounded-md text-center">
+              {item}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <div class="text-center font-semibold">Backends:</div>
+      <div class="flex flex-row flex-wrap justify-center gap-x-4">
+        {
+          skills.backend.map((item) => (
+            <div class=" bg-gray-200 my-2 w-fit p-2 rounded-md text-center">
+              {item}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <div class="text-center font-semibold">Tools:</div>
+      <div class="flex flex-row flex-wrap justify-center gap-x-4">
+        {
+          skills.tools.map((item) => (
+            <div class=" bg-gray-200 my-2 w-fit p-2 rounded-md text-center">
+              {item}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <div class="text-center font-semibold">OS</div>
+      <div class="flex flex-row flex-wrap justify-center gap-x-4">
+        {
+          skills.os.map((item) => (
+            <div class=" bg-gray-200 my-2 w-fit p-2 rounded-md text-center">
+              {item}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <div class="text-center font-semibold">Other</div>
+      <div class="flex flex-row flex-wrap justify-center gap-x-4">
+        {
+          skills.other.map((item) => (
+            <div class=" bg-gray-200 my-2 w-fit p-2 rounded-md text-center">
+              {item}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
